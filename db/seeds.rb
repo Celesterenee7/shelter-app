@@ -11,7 +11,7 @@ class Seed
         name: Faker::GreekPhilosophers.name,
         animal_type: Faker::Creature::Animal.name
       )
-      puts "Animals #{i}: name is #{animal.name} and animal type is #{animal.animal_type}."
+      puts "Animal #{i}: name is #{animal.name} and this animal is a #{animal.animal_type}."
     end
   end
 end
