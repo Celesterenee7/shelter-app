@@ -4,11 +4,14 @@ class AnimalsController < ApplicationController
     if params[:name]
       name = params[:name]
       @animals = Animal.search(name)
-      json_response(@animals)
+    elsif params[:dog]
+      @animals = Animal.random_dog
+    elsif params[:cat]
+      @animals = Animal.find_cat
     else
       @animals = Animal.all
-      json_response(@animals)
     end
+    json_response(@animals)
   end
 
   def show

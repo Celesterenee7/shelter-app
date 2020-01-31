@@ -1,10 +1,10 @@
-# require 'rails_helper'
+require 'rails_helper'
 
-# describe "post a animal route", :type => :request do
+describe "post a animal route", :type => :request do
 
-#   before do
-#     post '/animals', params: { :name => 'test_name', :creature => 'test_creature', :gender => 'test_gender' }
+  before do
+    post '/animals', params: { :name => 'test_name', :creature => 'test_creature', :gender => 'test_gender' }
 
-#     delete '/animals/.id', params: { :name => 'test_name', :creature => 'test_creature', :gender => 'test_gender' }
-#   end
-# end
+    delete '/animals/.id', params: { :name => 'test_name', :creature => 'test_creature', :gender => 'test_gender' }
+  end
+end
