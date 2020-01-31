@@ -4,10 +4,10 @@ class AnimalsController < ApplicationController
     if params[:name]
       name = params[:name]
       @animals = Animal.search(name)
-    elsif params[:dog]
-      @animals = Animal.random_dog
-    elsif params[:cat]
-      @animals = Animal.find_cat
+    elsif params[:creature]
+      @animals = Animal.random_creature
+    elsif params[:gender]
+      @animals = Animal.find_gender
     else
       @animals = Animal.all
     end
