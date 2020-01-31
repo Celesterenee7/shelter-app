@@ -1,4 +1,9 @@
 FactoryBot.define do
+  factory :item do
+    name { "MyString" }
+    description { "MyText" }
+  end
+
   factory :user do
     name { "MyString" }
     email { "MyString" }
