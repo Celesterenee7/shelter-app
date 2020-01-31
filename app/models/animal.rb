@@ -8,4 +8,6 @@ class Animal < ApplicationRecord
   validates :fav_food, presence: true
 
   scope :search, -> (name_parameter) { where("name like ?", "%#{name_parameter}%") }
+  scope :find_creature, -> (creature) { where("creature like?", "%#{creature_parameter}%")}
+  # scope :random_dog, -> { where(random_dog: "Cat")}
 end
