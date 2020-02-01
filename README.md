@@ -12,9 +12,9 @@ The concept for this project is to build a custom API for a client that would li
 * A second custom endpoint that accepts parameters (example: a SEARCH route that allows users to search by specific animal names).
 * Model scopes to process parameters from API calls.
 
-|Spec||
-|-|-|-|
-|A user should be able to see all animals by name and id||
+|Spec|API|
+|-|-|
+|A user should be able to see all animals by name and id|/animals/:id|
 
 
 ## Setup/Installation Requirements
