@@ -5,13 +5,12 @@
 The concept for this project is to build a custom API for a client that would like to display animals in need of foster homes. The goal is to have multiple search features for users and the best custom endpoint. 
 
 ## User Stories:
-
-## Specifications:
 * Endpoints for GET (all and by id), POST, PUT and DELETE.
 * A RANDOM endpoint that randomly returns an animal.
 * A second custom endpoint that accepts parameters (example: a SEARCH route that allows users to search by specific animal names).
 * Model scopes to process parameters from API calls.
 
+## Specifications:
 |Spec|API|
 |-|-|
 |A user should be able to see all animals by name and id|/animals/:id|
