@@ -11,13 +11,21 @@ The concept for this project is to build a custom API for a client that would li
 * Model scopes to process parameters from API calls.
 
 ## Specifications:
-|Spec|API|
+|Spec|API Call|
 |-|-|
-|A user should be able to see all animals by name and id|/animals/:id|
+|GET a list of all animals in the shelter|/animals/|
+|GET a list of all animals by name|/animals/?name=Meika|
+|GET a list of all animals by ID|/animals/:id/|
+|GET a random animal upon request|/animals/?random_creature|
+|GET a list of animals by gender|/animals/?gender=female|
+|GET a list of animals by their favorite food|/animals/?fav_food=carrots|
+|POST a new animal along with their info|/animals/name=Fay|
+|PUT an existing animal to update their current info|/animals/:id/?name=Meika|
+|DELETE an existing animal|/animals/:id/|
 
 
 ## Setup/Installation Requirements
-* Install Ruby 2.5.7 on your machine
+* Install Ruby 2.6.5 on your machine
 * Install SQL 12.1 with Postgres on your machine
 * Clone the git repository at https://github.com/Celesterenee7/shelter-app
 * Navigate to folder and run `bundle install` from terminal
